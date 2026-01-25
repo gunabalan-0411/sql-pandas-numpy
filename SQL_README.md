@@ -57,4 +57,5 @@ SELECT MIN(order_date) = MIN(customer_pref_delivery_date) AS immediate_order FRO
 
 ``` sql
 WHERE mail REGEXP '^[A-Za-z][A-Za-z0-9_.-]*@leetcode\\.com$';
+'(^| )word' -- means any word that starts with string a space before it
 ```

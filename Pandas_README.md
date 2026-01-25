@@ -104,7 +104,7 @@ code to rename column while grouping
 ```
 
 ## Regex
-
+For matching whole string by pattern and say its True or False
 col.str.match(patter, na=False)
 - ' ^ ' - starts with
 - ' * ' - 0 or more
@@ -114,4 +114,10 @@ col.str.match(patter, na=False)
 ```python
 pattern = "^[A-Za-z][A-Za-z0-9._-]*@leetcode\.com$"
 
+```
+For searching word in whole text say its True or False
+col.str.contains(pattern, regex=True, na=False)
+
+```python
+'(^| )DIAB1' # search for a word starting with DIAB1
 ```
