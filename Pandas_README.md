@@ -121,3 +121,10 @@ col.str.contains(pattern, regex=True, na=False)
 ```python
 '(^| )DIAB1' # search for a word starting with DIAB1
 ```
+
+## Date
+Date filter
+
+```python
+# df.date_col.dt.year, month etc
+```

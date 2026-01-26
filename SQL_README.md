@@ -39,6 +39,7 @@ SUM function with over
 ## Date
   -	DATE_ADD('date', INTERVAL Num DAY)
   -	Use BETWEEN for date range (BETWEEN '' AND '')
+  - DATE_FORMAT(col, '%m-%Y') #02-2026
 
 ## Math
   - Division	we can directly divide num of rows from table by a calculated value from another table by 2 select statement
