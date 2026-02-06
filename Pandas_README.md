@@ -128,3 +128,12 @@ Date filter
 ```python
 # df.date_col.dt.year, month etc
 ```
+
+## Math Misc
+* Round off
+* floating-point precision artifact
+* We add a small epsilon before rounding to avoid floating-point precision errors that can incorrectly round values like 30.499999 instead of 30.5. This ensures consistent, business-expected rounding behavior.
+```python
+round_off = lambda x: round(x+.00001, 0)
+managers['average_age'] = managers.average_age.apply(round_off)
+```
