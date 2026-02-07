@@ -136,4 +136,13 @@ Date filter
 ```python
 round_off = lambda x: round(x+.00001, 0)
 managers['average_age'] = managers.average_age.apply(round_off)
+
+```
+
+## Data Science
+
+```python
+print(df.dtypes == 'object')
+categorical_cols = df.select_dtypes(include=["object", "category"]).columns.tolist()
+
 ```
