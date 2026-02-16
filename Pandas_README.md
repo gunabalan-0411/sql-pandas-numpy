@@ -8,6 +8,16 @@ queue['weight_so_far'] = queue['weight'].cumsum()
 
 ## Grouping
 
+### Group By Col level, Melt
+
+```python
+    return products.melt(
+        id_vars = 'product_id',
+        value_vars = ['store1', 'store2', 'store3'],
+        var_name = 'store',
+        value_name = 'price'
+    ).dropna(subset='price')
+```
 ### Group By Function using agg (efficient)
 we can also use lambda x: func(x) for custom aggregation function
 ```python
@@ -146,3 +156,4 @@ print(df.dtypes == 'object')
 categorical_cols = df.select_dtypes(include=["object", "category"]).columns.tolist()
 
 ```
+
