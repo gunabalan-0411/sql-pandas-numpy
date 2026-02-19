@@ -157,3 +157,9 @@ categorical_cols = df.select_dtypes(include=["object", "category"]).columns.toli
 
 ```
 
+## Index
+
+```python
+# Re-index (to maintain categories with 0 where there is no values available)
+df.reindex(desired_order, fill_value=0)
+```
