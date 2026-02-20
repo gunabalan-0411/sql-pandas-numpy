@@ -67,3 +67,8 @@ WHERE mail REGEXP '^[A-Za-z][A-Za-z0-9_.-]*@leetcode\\.com$';
 SUBSTR(col_name, start, end)
 
 ```
+## NULL Handling
+
+```sql
+IFNULL(COLUMN,0)
+```
